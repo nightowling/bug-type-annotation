@@ -19,3 +19,8 @@ This is likely not portable. A type annotation is necessary.ts(2742)
 The inferred type of 'ABC' cannot be named without a reference to 'bug-type-annotation-a/node_modules/mobx-state-tree'. This is likely not portable. A type annotation is necessary.ts(2742)
 
 ```
+
+# Relevant links when troubleshooting
+(no luck in following their steps)
+- https://github.com/microsoft/TypeScript/issues/47663
+- https://github.com/microsoft/TypeScript/issues/29808
