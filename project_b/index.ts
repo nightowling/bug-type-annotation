@@ -1,9 +1,14 @@
-import { types } from "bug-type-annotation-a";
+import { modelA, ModelA } from "bug-type-annotation-a";
+import { types } from "mobx-state-tree";
 
-export const ABC = types.model({
-  activeUserId: types.maybe(types.string),
+export const ModelB = types.model({
+  modelAs: types.array(ModelA),
 });
 
-export const abc = ABC.create({
-  activeUserId: "",
+export const modelB = ModelB.create({
+  modelAs: [
+    {
+      a: "",
+    },
+  ],
 });
