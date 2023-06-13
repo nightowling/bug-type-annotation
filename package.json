@@ -1,0 +1,17 @@
+{
+  "name": "bug-type-annotation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildA": "cd ./project_a && yarn build && cd ..",
+    "buildB": "cd ./project_b && yarn build && cd ..",
+    "build": "yarn buildA && yarn buildB",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mobx-state-tree": "^5.1.8"
+  }
+}
