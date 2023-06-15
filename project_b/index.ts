@@ -1,14 +1,12 @@
-import { modelA, ModelA } from "bug-type-annotation-a";
-import { types } from "mobx-state-tree";
+import { ModelA, types } from "bug-type-annotation-a";
 
-export const ModelB = types.model({
-  modelAs: types.array(ModelA),
-});
+export const ModelB = types
+  .model({
+    modelAs: types.array(ModelA),
+  })
 
-export const modelB = ModelB.create({
-  modelAs: [
-    {
-      a: "",
+  .actions((self) => ({
+    hello: () => {
+      self.modelAs.push(ModelA.create(/** DTO comes here */));
     },
-  ],
-});
+  }));
