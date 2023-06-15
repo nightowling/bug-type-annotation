@@ -1,4 +1,6 @@
-import { ModelA, types } from "bug-type-annotation-a";
+import { types } from "mobx-state-tree";
+
+import { ModelA } from "bug-type-annotation-a";
 
 export const ModelB = types
   .model({
